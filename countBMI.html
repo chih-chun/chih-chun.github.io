@@ -23,17 +23,52 @@
 </head>
 
 <body>
-    身高：<input type="text" id="A">公尺<br>
-    體重：<input type="text" id="B">公斤<br>
-    <a href="#" id='BMI'>計算</a><br>
-    <span id="result"></span>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <nav class="navbar navbar-inverse navbar-fixed-bottom  ">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                <a class="navbar-brand" href="first.html">簡介</a></li>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="countBMI.html"><strong><span style="font-family:Microsoft JhengHei">開始計算</span></strong></a>
+                    </li>
+                    <li>
+                        <a href="range.html"><span style="font-family:Microsoft JhengHei">BMI範圍</span></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+                <h4>輸入時，請注意<span style="font-family::SimHei"><strong>單位</strong><span></h4>
+                <p>身高：<input type="text" id="A">公尺</p>
+                <p> 體重：<input type="text" id="B">公斤</p>
+                <a class="btn btn-primary" href="#" id='BMI'>計算</a><br>
+                <h1><span id="result"></span></h1>
+                    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+                    <!-- Include all compiled plugins (below), or include individual files as needed -->
+                    <script src="js/bootstrap.min.js"></script>
 
-    <!-- 引入自己寫的 JS 檔 -->
-    <script src="js/counting.js"></script>
+                    <!-- 引入自己寫的 JS 檔 -->
+                    <script src="js/counting.js"></script>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
