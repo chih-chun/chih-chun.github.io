@@ -2,7 +2,7 @@
 <html class="full" lang="en">
 
 <head>
- <meta charset="utf-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
@@ -21,6 +21,14 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+</style>
 
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-bottom  ">
@@ -51,6 +59,48 @@
         </div>
         <!-- /.container -->
     </nav>
+    <div class=container>
+        <div class=row>
+            <div class='col-md-4'>
+                <h3><span style="font-family::SimHei"><strong>成年人的BMI分級</strong></span></h3>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <table class="table table-bordered black">
+                    <tr>
+                        <th>BMI範圍</th>
+                        <th>分級</th>
+                    </tr>
+                    <tr>
+                        <td>< 18.5</td>
+                        <td>體重過輕</td>
+                    </tr>
+                    <tr bgcolor=#66FF33>
+                        <td>18.5 ~ 24</td>
+                        <td>正常範圍</td>
+                    </tr>
+                    <tr bgcolor=#CCFF00>
+                        <td>24 ~ 27</td>
+                        <td>體重過重</td>
+                    </tr>
+                    <tr bgcolor=#FFCC33>
+                        <td>27 ~30</td>
+                        <td>輕度肥胖</td>
+                    </tr>
+                    <tr bgcolor=#FF6600>
+                        <td>30 ~ 35</td>
+                        <td>中度肥胖</td>
+                    </tr>
+                    <tr bgcolor=#FF0000>
+                        <td>&ge;35</td>
+                        <td>重度肥胖</td>
+                    </tr>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
